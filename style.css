@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #2980b9;;
+}
+
+.game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 60vw;
+}
+
+.player-container  {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1c40f;
+  position: relative;
+  height: 100%;
+}
+
+.game__player-box {
+  height: 100%;
+  width: 100%;
+}
+
+
+.game__player-box {
+  position: relative;
+  text-align: center;
+}
+
+/* player nimi */
+.game__player-box h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 4rem;
+  position: absolute;
+  top: 15rem;
+  width: 100%;
+
+}
+
+/* Kogu score */
+.player__total-score {
+  font-family: 'Poppins', sans-serif;
+  color: #e74c3c;
+  font-size: 70px;
+  position: absolute;
+  top: 24rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* current score */
+.player__current-score {
+  width: 70%;
+  position: absolute;
+  bottom: 25rem;
+  left: 50%;
+  transform: translate(-50%);
+
+  background-color: #e74c3c;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.player__current-score span {
+  margin-left: 1rem;
+  font-size: 150%;
+}
+
+
+.hiden {
+  background-color: rgb(0 0 0 / 60%);
+}
+
+.die__random-number {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  z-index: 2;
+}
+
+.die img {
+  height: 10rem;
+  
+}
+
+.dot {
+  height: 20rem;
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 50%;
+  /* display: inline-block; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 0.5rem 2.5rem;
+  font-size: 1.6rem;
+  background-color: rgb(255 255 255 / 80%);
+  border: 1px solid rgb(255 255 255 / 80%);
+}
+
+.btn span{
+  margin-right: 1rem;
+}
+
+/* Uus mäng nupp */
+.btn_new-game {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Keeruta täringut */
+.btn__roll-dice {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Hoia nupp */
+.btn__hold {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.pop-up__bg-overlay {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0 0 0 / 50%);
+  z-index: 1;
+}
+
+.pop-up {
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 99;
+  max-width: 50rem;
+  padding: 2.5rem;
+  border-radius: 5px;
+
+}
+
+.pop-up__hide {
+  display: none;
+}
+
+.pop-up__title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.pop-up__tekst {
+  font-size: 1.8rem;
+}
+.pop-up__close {
+  position: relative;
+  font-size: 2rem;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+
+
+  right: 0;
+  top: 0;
+}
+
+.pop-up__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  text-align: center;
+
+
+}
+
+
