@@ -1,3 +1,29 @@
+const playerOneName = document.getElementById('register-player__player-info--player-one-name')
+const playerTwoName = document.getElementById('register-player__player-info--player-two-name')
+const playerNames = []
+
+document.querySelector('.btn__register-player').addEventListener('click', function () {
+  if (playerOneName.value !== '' && playerTwoName.value !== '') {
+    playerNames.push(playerOneName.value)
+    playerNames.push(playerTwoName.value)
+    console.log(playerNames)
+    document.querySelector('.game__player-box--one h2').textContent = playerNames[0]
+    document.querySelector('.game__player-box--two h2').textContent = playerNames[1]
+    document.querySelector('.register-player__container').style.display = 'none'
+  }
+  else {
+    console.log('error')
+  }
+})
+
+
+
+
+
+
+
+
+
 let playerOneTotalScore = document.querySelector('.player-one__total-score');
 let playerTwoTotalScore = document.querySelector('.player-two__total-score');
 const playerTotalScore = document.querySelectorAll('.player__total-score')
