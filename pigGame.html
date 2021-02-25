@@ -10,48 +10,39 @@
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
- 
+
   <div class="game-container">
     <div class="player-container">
       <div id="user-one" class="game__player-box game__player-box--one">
         <div class="player__info">
           <h2>Mängija 1</h2>
-      
             <p class="player-one__current-score player__current-score">Praegu kokku: <span>0</span></p>
-      
           <p class="player-one__total-score player__total-score">0</p>
-     
         </div>   
       </div>
       <div id="user-two" class="game__player-box game__player-box--two ">
         <div class="player__info">
           <h2>Mängija 2</h2>
-        
             <p class="player-two__current-score player__current-score">Praegu kokku: <span>0</span></p>
-        
           <p class="player-two__total-score player__total-score">0</p>
-         
         </div>
       </div>
     </div>
     <button class="btn btn_new-game"><span>🔄</span>New Game</button>
     <button class="btn btn__roll-dice"><span>🎲</span>Viska täringut</button>
     <button  class="btn btn__hold"><span>💾</span>Hold</button>
-    <div class="die">
-      <img   class="die__random-number" id="die__random-number-img"  src="./img/dice-1.png" alt="">
+    <div class="dot">
+      <div class="die">
+        <img   class="die__random-number-img" id="die__random-number-img"  src="./img/dice-1.png" alt="">
+      </div>
     </div>
-    <div class="dot"></div>
-
-    
   </div>
   <div class="pop-up pop-up__hide">
-  
-   
     <div class="pop-up__close"><p>X</p></div>
     <div class="pop-up__title">Võitja</div>
     <p class="pop-up__tekst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, impedit fugiat! Nemo hic rem excepturi magni velit fugiat dolore impedit magnam similique non reiciendis fuga est quis, repudiandae, ipsum aspernatur!</p>
   </div>
   <div class="pop-up__bg-overlay pop-up__hide"></div>
-<script src="/pig-game/app.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>

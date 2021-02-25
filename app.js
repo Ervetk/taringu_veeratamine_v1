@@ -1,15 +1,13 @@
 let playerOneTotalScore = document.querySelector('.player-one__total-score');
 let playerTwoTotalScore = document.querySelector('.player-two__total-score');
+const playerTotalScore = document.querySelectorAll('.player__total-score')
 let playerOneCurrent = 0
-
 let playerTwoCurrent = 0
-
 
 let score = [0, 0]
 let currentScore = 0
 let activUser = 0
 let user = ["one", "two"]
-
 
 function changeTextContent(classInfo, contetInfo) {
   document.querySelector(classInfo).textContent = contetInfo
@@ -36,16 +34,29 @@ const hideElement = function (elementClass) {
 }
 
 
+// NEW GAME function
+const newGame = function () {
+  score = [0, 0];
+  currentScore = 0
+  document.querySelector(`.player-${user[activUser]}__current-score span`).textContent = currentScore;
+  // ES6 loop
+  for (const [key] of playerTotalScore.entries())
+    playerTotalScore[key].textContent = 0
+}
+
+// NEW GAME BUTTON
+document.querySelector('.btn_new-game').addEventListener('click', newGame)
+
+
 document.querySelector('.btn__roll-dice').addEventListener('click', function () {
   let randomNumber = Math.trunc(Math.random() * 6) + 1
   document.getElementById('die__random-number-img').src = `./img/dice-${randomNumber}.png`
   console.log(randomNumber)
-  changeTextContent('.die__random-number', randomNumber)
+  changeTextContent('.die__random-number-img', randomNumber)
   // näita ja suurenda current score õigel useril
   if (randomNumber !== 1) {
     currentScore += randomNumber
     changeTextContent(`.player-${user[activUser]}__current-score span`, currentScore)
-
   }
   // kui random on 1 siis current null ja user vahetub
   else {
@@ -61,13 +72,14 @@ document.querySelector('.btn__roll-dice').addEventListener('click', function () 
 document.querySelector('.btn__hold').addEventListener('click', function () {
   score[activUser] += currentScore
 
-  if (score[activUser] >= 100) {
+  if (score[activUser] >= 10) {
     const winnerUser = document.querySelector(`.game__player-box--${user[activUser]} h2`).textContent
     hideElement('.pop-up')
     hideElement('.pop-up__bg-overlay')
     changeTextContent('.pop-up__title', `Võtja on ${winnerUser}`)
-
+    newGame()
   }
+
   currentScore = 0
   changeTextContent(`.player-${user[activUser]}__current-score span`, currentScore)
   switcPlayer()
@@ -98,3 +110,5 @@ document.addEventListener('keydown', function (event) {
       showElement('.pop-up__bg-overlay')
     }
 })
+
+

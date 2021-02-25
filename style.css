@@ -68,12 +68,11 @@ body {
 
 /* current score */
 .player__current-score {
-  width: 70%;
+  width: 80%;
   position: absolute;
   bottom: 25rem;
   left: 50%;
   transform: translate(-50%);
-
   background-color: #e74c3c;
   color: #fff;
   text-transform: uppercase;
@@ -83,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .player__current-score span {
@@ -91,23 +90,8 @@ body {
   font-size: 150%;
 }
 
-
 .hiden {
   background-color: rgb(0 0 0 / 60%);
-}
-
-.die__random-number {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  z-index: 2;
-}
-
-.die img {
-  height: 10rem;
-  
 }
 
 .dot {
@@ -115,12 +99,24 @@ body {
   width: 20rem;
   background-color: #fff;
   border-radius: 50%;
-  /* display: inline-block; */
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 50%;
+  left: 50%; 
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.die {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.die__random-number-img {
+  height: 10rem;
+  z-index: 2;
 }
 
 .btn {
@@ -201,8 +197,6 @@ body {
   height: 30px;
   border-radius: 50%;
   color: #fff;
-
-
   right: 0;
   top: 0;
 }
@@ -212,8 +206,6 @@ body {
   top: 1.5rem;
   right: 1.5rem;
   text-align: center;
-
-
 }
 
 
