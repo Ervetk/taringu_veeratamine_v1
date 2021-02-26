@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
-  <title>Pig Game</title>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Risk it for the biscuit</title>
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -44,22 +46,23 @@
   </div>
   <div class="pop-up__bg-overlay pop-up__hide"></div>
 
-
-  <div class="register-player__container ">
-    <div class="register-player__inbut-box">
-      <h2 class="register-player__inbut-box-title">Sisesta mängijate nimed</h2>
-      <div class="register-player__player-info">
-        <h3>Mängija 1</h3>
-        <input type="text" id="register-player__player-info--player-one-name" required>
-      </div>
-      <div class="player-info">
-        <h3>Mängija 2</h3>
-        <input type="text" id="register-player__player-info--player-two-name" required>
-      </div>
-      <button class="btn btn__register-player">Mängima</button>
-      
+<!-- REGISTREERI MÄNGIJAD -->
+<div class="register-player__container ">
+  <img class="register-player__logo" src="./img/logo.svg">
+  <div class="register-player__inbut-container">
+    <div class="register-player__inbut-box"> 
+      <h2 class="register-player__inbut-box-title">Sisesta nimed</h2>
+      <form>
+        <input  type="text" class="input-regular" id="register-player__player-info--player-one-name"  placeholder="Mängija 1 nimi" required>
+        <input type="text" class="input-regular" id="register-player__player-info--player-two-name" required placeholder="Mängija 2 nimi">
+        <button id="btn__register-player" type="submit" >Alusta mängu</button>
+      </form> 
     </div>
+   <img class="register-player__image-blue-cat" src="./img/cat-face 1.svg" alt="">
   </div>
+
+
+
 
 
 <script src="./app.js"></script>

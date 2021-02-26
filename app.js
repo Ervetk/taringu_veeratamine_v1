@@ -1,8 +1,13 @@
+
+//////--TÖÖS--/////////////////////////////////////////////////
+
+
 const playerOneName = document.getElementById('register-player__player-info--player-one-name')
 const playerTwoName = document.getElementById('register-player__player-info--player-two-name')
 const playerNames = []
 
-document.querySelector('.btn__register-player').addEventListener('click', function () {
+document.querySelector('#btn__register-player').addEventListener('click', function (e) {
+  e.preventDefault()
   if (playerOneName.value !== '' && playerTwoName.value !== '') {
     playerNames.push(playerOneName.value)
     playerNames.push(playerTwoName.value)
@@ -10,6 +15,7 @@ document.querySelector('.btn__register-player').addEventListener('click', functi
     document.querySelector('.game__player-box--one h2').textContent = playerNames[0]
     document.querySelector('.game__player-box--two h2').textContent = playerNames[1]
     document.querySelector('.register-player__container').style.display = 'none'
+
   }
   else {
     console.log('error')
@@ -17,12 +23,7 @@ document.querySelector('.btn__register-player').addEventListener('click', functi
 })
 
 
-
-
-
-
-
-
+////////////////////////////////////////////////////////////////
 
 let playerOneTotalScore = document.querySelector('.player-one__total-score');
 let playerTwoTotalScore = document.querySelector('.player-two__total-score');
@@ -98,11 +99,11 @@ document.querySelector('.btn__roll-dice').addEventListener('click', function () 
 document.querySelector('.btn__hold').addEventListener('click', function () {
   score[activUser] += currentScore
 
-  if (score[activUser] >= 10) {
+  if (score[activUser] >= 100) {
     const winnerUser = document.querySelector(`.game__player-box--${user[activUser]} h2`).textContent
     hideElement('.pop-up')
     hideElement('.pop-up__bg-overlay')
-    changeTextContent('.pop-up__title', `Võtja on ${winnerUser}`)
+    changeTextContent('.pop-up__title', `Võitja on ${winnerUser}`)
     newGame()
   }
 

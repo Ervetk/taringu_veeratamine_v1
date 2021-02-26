@@ -8,6 +8,10 @@
 html {
   font-size: 10px;
 }
+:root {
+  /* COLOR */
+  --button-color: #0071E3;
+}
 
 body {
   background-color: #2980b9;;
@@ -211,21 +215,158 @@ body {
 
 
 /* REGISTER PLAYER */
+
 .register-player__container {
-  background-color: #000;
+  /* display: none; */
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: relative;
   color: #fff;
-  display: none;
+  background-color: black;
+  background: -webkit-radial-gradient(center, ellipse, rgb(54 56 63) 0%, rgb(26 29 34) 60%, rgb(0 0 0) 90%);
+  background: radial-gradient(ellipse at center, rgb(54 56 63) 0%, rgb(26 29 34) 60%, rgb(0 0 0) 90%);
+
 }
 
-
+.register-player__inbut-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 43.2rem;
+  height: 29.9rem;
+} 
 
 .register-player__inbut-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 43.2rem;
+  height: 29.9rem;
+  background: #fff;
+  border-radius: 10px;
+}
 
+
+
+
+
+.register-player__image-blue-cat {
+  position: absolute;
+  /* left: 0%;
+  top: 0%; */
+  right:-22%;
+  top: -35%;
+  z-index: -999;
+  
+
+}
+
+.register-player__inbut-box-title {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 17px;
+}
+
+.input-regular {
+  font-family: 'Roboto', sans-serif;
+  
+  position: absolute;
+  width: 34.5rem;
+  height: 4.4rem;
+  background: #FFFFFF;
+  opacity: 0.5;
+  border: 1px solid #050000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.6rem;
+  padding-left: 1.3rem;
+  font-weight: 400;
+
+}
+
+.input-regular:focus div {
+  color: #000;
+
+}
+
+.input-regular::placeholder {
+
+  /* font-size: 1.6rem; */
+  /* color: #C7C6C6; */
+
+}
+
+form button {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 17.9rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 34.5rem;
+  height: 4.4rem;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #E5E5E5;
+  border: none;
+  
+}
+
+#register-player__player-info--player-one-name {
+  top: 6.5rem;
+}
+#register-player__player-info--player-two-name {
+  top: 12.2rem;
+}
+
+
+.register-player__logo {
+  display: flex;
+  max-width: 60rem;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+
+
+@-webkit-keyframes liikumine {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes liikumin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes liikumin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes liikumin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes move {
+  from   { top: 35%;; left: 55%;  }
+  to { top: -35%; left: 85%; }
+}
+
+
+/* KASSI ANIMATSOON */
+.register-player__image-blue-cat {
+  animation: move 1.6s steps(40)   alternate;
 }
