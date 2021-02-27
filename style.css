@@ -360,6 +360,12 @@ form button {
   100% { opacity: 1; }
 }
 
+
+
+
+
+
+
 @keyframes move {
   from   { top: 35%;; left: 55%;  }
   to { top: -35%; left: 85%; }
@@ -369,4 +375,189 @@ form button {
 /* KASSI ANIMATSOON */
 .register-player__image-blue-cat {
   animation: move 1.6s steps(40)   alternate;
+  animation-fill-mode: backwards; 
+  animation-delay: 4.5s;
+}
+
+/* KÄPA JÄLJED */
+.kapa-jalg {
+  position: absolute;
+  max-width: 50px;
+  animation-name: liikumine;
+  animation-duration: 1s; 
+  animation-fill-mode: backwards; 
+}
+.kappa-jalg-1 {
+  animation-delay: 0.2s;
+  bottom: -6rem;
+  left: 15rem;
+  transform: rotate(179deg);
+ }
+.kappa-jalg-2 {
+  animation-delay: 0.4s;
+  bottom: -6rem;
+  left: 8rem;
+  transform: rotate(202deg);
+}
+
+ .kappa-jalg-3 {
+  animation-delay: 0.5s;
+  bottom: -12rem;
+  left: 5rem;
+  transform: rotate(227deg);
+}
+
+.kappa-jalg-4 {
+ animation-delay: .8s;
+ bottom: -7rem;
+ left: 1rem;
+ transform: rotate(235deg);
+}
+
+.kappa-jalg-5 {
+  animation-delay: 1s;
+  bottom: -11rem;
+  left: -5rem;
+  transform: rotate(254deg);
+}
+.kappa-jalg-6 {
+  animation-delay: 1.2s;
+  bottom: -4.2rem;
+  left: -4rem;
+  transform: rotate(270deg);
+}
+.kappa-jalg-7 {
+  animation-delay: 1.4s;
+  bottom: -5rem;
+  left: -10rem;
+  transform: rotate(293deg);
+}
+.kappa-jalg-8 {
+  animation-delay: 1.6s;
+  bottom: 2rem;
+  left: -6rem;
+  transform: rotate(321deg);
+}
+.kappa-jalg-9 {
+  animation-delay:1.8s;
+  bottom: 3rem;
+  left: -12rem;
+  transform: rotate(330deg);
+}
+.kappa-jalg-10 {
+  animation-delay:2s;
+  bottom: 8rem;
+  left: -4.4rem;
+  transform: rotate(360deg);
+}  
+.kappa-jalg-11 {
+  animation-delay:2.2s;
+  bottom: 9rem;
+  left: -10rem;
+  transform: rotate(363deg);
+}  
+.kappa-jalg-12 {
+  animation-delay:2.4s;
+  bottom: 14rem;
+  left: -5rem;
+  transform: rotate(377deg);
+}   
+
+
+
+
+@-webkit-keyframes liikuumine {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes liikumin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes liikumin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes liikumin {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* KASSIKÄP JA KÜPSIS */
+
+.terve-kupsis__1 {
+  animation:  terve-kypsise-liikumine 1.4s steps(40);
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-delay: 3.2s;
+  animation-duration: 1.9s; /* or: Xms */
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: -130px;
+  left: 30px;
+  z-index: -2;
+}
+
+.kassi-kapp__pealt-vaade {
+  animation:  kappa-liikumine 1.2s steps(50);
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-duration: 1.1s;
+  /* animation-timing-function: ease-out; */
+  animation-delay: 2s;
+  position: absolute;
+
+  z-index: -1;
+ 
+}
+
+
+@keyframes kappa-liikumine {
+  from   { top: 15px; left: 49px;  }
+  to { top: -80px; left: 45px; };
+  
+}
+@keyframes terve-kypsise-liikumine {
+  to   { top: 15px; left: 45px;  }
+  from { top: -130px; left: 30px; }
+
+}
+
+
+.cookie {
+  position: absolute;
+}
+.cookie_2 {
+  top: -5rem;
+  left: -69%;
+}
+
+.cookie_3 {
+  bottom: -10rem;
+  right: -9rem;
+ 
+}
+
+
+.jutupaun {
+  position: absolute;
+  top: -164px; 
+  right: -249px;
+  opacity: 0;
+
+  /* animation:  jutupaun_ilmub 1.2s steps(50); */
+  animation-name: jutupaun_ilmub;
+  animation-duration: 1.5s; /* or: Xms */
+  animation-fill-mode: forwards;
+  
+ 
+  /* animation-timing-function: ease-out; */
+  animation-delay: 6.5s;
+}
+@-webkit-keyframes jutupaun_ilmub {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+  from  {  top: -164px; right: -249px };
+  to {  top: -164px; right: -249px };
 }
