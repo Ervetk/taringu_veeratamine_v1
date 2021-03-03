@@ -13,32 +13,59 @@
 </head>
 <body>
 
+<img class="game-logo" src="./img/logo.svg" alt="">
   <div class="game-container">
+  
     <div class="player-container">
+      
       <div id="user-one" class="game__player-box game__player-box--one">
         <div class="player__info">
           <h2>Mängija 1</h2>
-            <p class="player-one__current-score player__current-score">Praegu kokku: <span>0</span></p>
-          <p class="player-one__total-score player__total-score">0</p>
+            <p class="player-one__current-score player__current-score"><span>0</span></p>
+
+          <div id="player-one__total-score">
+            <p class="player-one__total-score player__total-score">0</p>
+          </div>
+
         </div>   
       </div>
-      <div id="user-two" class="game__player-box game__player-box--two ">
+      <div id="user-two" class=" hiden game__player-box game__player-box--two ">
         <div class="player__info">
           <h2>Mängija 2</h2>
-            <p class="player-two__current-score player__current-score">Praegu kokku: <span>0</span></p>
-          <p class="player-two__total-score player__total-score">0</p>
+            <p class="player-two__current-score player__current-score"><span>0</span></p>
+            
+            
+            <div id="player-two__total-score">
+              <p class="player-two__total-score player__total-score">0</p>
+            </div>
         </div>
       </div>
-    </div>
-    <button class="btn btn_new-game"><span>🔄</span>New Game</button>
-    <button class="btn btn__roll-dice"><span>🎲</span>Viska täringut</button>
-    <button  class="btn btn__hold"><span>💾</span>Hold</button>
-    <div class="dot">
-      <div class="die">
-        <img   class="die__random-number-img" id="die__random-number-img"  src="./img/dice-1.png" alt="">
+     
+      <!-- TÄRING -->
+      <div class="dot">
+      <!-- <div class="x"></div> -->
+        <div class="die">
+          <img   class="die__random-number-img" id="die__random-number-img"  src="./img/dice-1.png" alt="">
+        </div>
       </div>
+      <button class="btn btn_new-game"><span>🔄</span>New Game</button>
+      <button class="btn btn__roll-dice"><span>🎲</span>Viska täringut</button>
+      <button  class="btn btn__hold"><span>💾</span>Hold</button>
+      <img class="game-kupsis game-kupsis-1" src="./img/cooki_3.svg" alt=""> 
+      <img class="game-kupsis game-kupsis-2" src="./img/cooki_2.svg" alt=""> 
+      <img class="game-kupsis game-kupsis-3" src="./img/cooki_3.svg" alt=""> 
+      <img class="game-kupsis game-kupsis-4" src="./img/kupsis_terve.svg" alt=""> 
+      <img class="game-kupsis game-kupsis-5" src="./img/kupsis_terve.svg" alt=""> 
+      <img class="game-kupsis game-kupsis-6" src="./img/kupsis_terve.svg" alt=""> 
+      <img class="game-kupsis game-kupsis-7" src="./img/kupsis_terve.svg" alt=""> 
+      <!-- KASS -->
+      <img class="game__image-blue-cat" src="./img/cat-face 1.svg" alt="">
     </div>
+   
   </div>
+
+
+
   <div class="pop-up pop-up__hide">
     <div class="pop-up__close"><p>X</p></div>
     <div class="pop-up__title">Võitja</div>

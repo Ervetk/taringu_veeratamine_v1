@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+:root {
+  /* COLOR */
+  --button-color: #0071E3;
+  --blue: #0071E3;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh; 
+  color: #fff;
+  background-color: black;
+  background: -webkit-radial-gradient(center, ellipse, rgb(54, 56, 63) 0%, rgb(26, 29, 34) 60%, rgb(0, 0, 0) 90%);
+  background: radial-gradient(ellipse at center, rgb(54, 56, 63) 0%, rgb(26, 29, 34) 60%, rgb(0, 0, 0) 90%);
+
+}
