@@ -1,0 +1,59 @@
+.register-player__container { 
+  // display: none;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    color: #fff;
+    background-color: black;
+    background: -webkit-radial-gradient(center, ellipse, rgb(54, 56, 63) 0%, rgb(26, 29, 34) 60%, rgb(0, 0, 0) 90%);
+    background: radial-gradient(ellipse at center, rgb(54, 56, 63) 0%, rgb(26, 29, 34) 60%, rgb(0, 0, 0) 90%);
+  z-index: 100;
+  
+  }
+  .register-player__inbut-container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 43.2rem;
+    height: 29.9rem;
+  } 
+  
+  .register-player__inbut-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 43.2rem;
+    height: 29.9rem;
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  
+  .register-player__image-blue-cat {
+    position: absolute;
+    /* left: 0%;
+    top: 0%; */
+    right:-22%;
+    top: -35%;
+    z-index: -999;
+
+  }
+  
+  
+  
+  #register-player__input--plyer-one {
+    top: 6.5rem;
+  }
+  
+  
+  #register-player__input--plyer-two {
+    top: 12.2rem;
+  }
+  
+  
+   
+  
+   
+  

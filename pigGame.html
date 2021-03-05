@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./img/favicon-32x32.png"/>
   <title>Risk it for the biscuit</title>
 <link rel="stylesheet" href="./style.css">
 </head>
@@ -48,9 +49,9 @@
           <img   class="die__random-number-img" id="die__random-number-img"  src="./img/dice-1.png" alt="">
         </div>
       </div>
-      <button class="btn btn_new-game"><span>🔄</span>New Game</button>
+      <button class="btn btn_new-game"><span>🔄</span>Uus mäng</button>
       <button class="btn btn__roll-dice"><span>🎲</span>Viska täringut</button>
-      <button  class="btn btn__hold"><span>💾</span>Hold</button>
+      <button  class="btn btn__hold"><span>💾</span>Passin</button>
       <img class="game-kupsis game-kupsis-1" src="./img/cooki_3.svg" alt=""> 
       <img class="game-kupsis game-kupsis-2" src="./img/cooki_2.svg" alt=""> 
       <img class="game-kupsis game-kupsis-3" src="./img/cooki_3.svg" alt=""> 
@@ -79,10 +80,14 @@
   <div class="register-player__inbut-container">
     <div class="register-player__inbut-box"> 
       <h2 class="register-player__inbut-box-title">Sisesta nimed</h2>
-      <form>
-        <input  type="text" class="input-regular" id="register-player__player-info--player-one-name"  placeholder="Mängija 1 nimi" required>
-        <input type="text" class="input-regular" id="register-player__player-info--player-two-name" required placeholder="Mängija 2 nimi">
-        <button id="btn__register-player" type="submit" >Alusta mängu</button>
+      <form class="reg-player__form">
+        <input id="register-player__input--plyer-one" class="input-regular " type="text" name="" id="" placeholder="Mängija 1" required>
+        <input  id="register-player__input--plyer-two" class="input-regular" type="text" placeholder="Mängija 2" required>
+      <button id="btn__register-player" type="submit" >Alusta mängu</button>
+
+        <!-- <input  type="text" class="input-regular" id="register-player__player-info--player-one-name"  placeholder="Mängija 1 nimi" required>
+        <input type="text" class="input-regular" id="register-player__player-info--player-two-name" required placeholder="Mängija 2 nimi"> -->
+        <!-- <button id="btn__register-player" type="submit" >Alusta mängu</button> -->
       </form> 
     </div>
    <img class="register-player__image-blue-cat" src="./img/cat-face 1.svg" alt="">
@@ -108,8 +113,10 @@
   <img class="kapa-jalg kappa-jalg-11" src="./img/kapp.png" alt="">
   <img class="kapa-jalg kappa-jalg-12" src="./img/kapp.png" alt="">
 </div>
+<div class="footer">
+  <a class="footer__social-media-icon--github-icon" href="https://github.com/Ervetk/taringu_veeratamine_v1" target="_blank"><img src="./img/bi_github.svg" alt=""></a>
 </div>
- 
+</div>
 
  
 

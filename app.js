@@ -2,8 +2,8 @@
 //////--TÖÖS--/////////////////////////////////////////////////
 
 
-const playerOneName = document.getElementById('register-player__player-info--player-one-name')
-const playerTwoName = document.getElementById('register-player__player-info--player-two-name')
+const playerOneName = document.getElementById('register-player__input--plyer-one')
+const playerTwoName = document.getElementById('register-player__input--plyer-two')
 const playerNames = []
 
 document.querySelector('#btn__register-player').addEventListener('click', function (e) {
@@ -99,7 +99,7 @@ document.querySelector('.btn__roll-dice').addEventListener('click', function () 
 document.querySelector('.btn__hold').addEventListener('click', function () {
   score[activUser] += currentScore
 
-  if (score[activUser] >= 100) {
+  if (score[activUser] >= 50) {
     const winnerUser = document.querySelector(`.game__player-box--${user[activUser]} h2`).textContent
     hideElement('.pop-up')
     hideElement('.pop-up__bg-overlay')

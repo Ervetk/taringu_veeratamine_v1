@@ -24,3 +24,18 @@ body {
   background: radial-gradient(ellipse at center, rgb(54, 56, 63) 0%, rgb(26, 29, 34) 60%, rgb(0, 0, 0) 90%);
 
 }
+
+
+// Reg lehe logo
+.register-player__logo {
+  display: flex;
+  max-width: 60rem;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+a {
+  cursor: pointer;
+}

@@ -26,3 +26,36 @@
 #user-two  h2 {
   text-align: right;
 }
+
+
+.register-player__inbut-box-title {
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 1.7rem;
+}
+
+
+.input-regular {
+  font-family: 'Roboto', sans-serif;
+  
+  position: absolute;
+  width: 34.5rem;
+  height: 4.4rem;
+  background: #FFFFFF;
+  opacity: 0.5;
+  border: 1px solid #050000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.6rem;
+  padding-left: 1.3rem;
+  font-weight: 400;
+
+}

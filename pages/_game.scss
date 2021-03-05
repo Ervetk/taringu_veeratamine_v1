@@ -118,3 +118,13 @@ left: 23%;
 #player-two__total-score::before { 
 right: 0%;
 }
+
+
+// Mängus olev kass
+.game__image-blue-cat {
+  position: absolute;
+  right: -11%;
+  z-index: -1;
+  transform:  rotate(9deg);
+}
+

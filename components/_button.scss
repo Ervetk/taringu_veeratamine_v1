@@ -36,3 +36,22 @@
   left: 50%;
   transform: translate(-50%);
 }
+
+
+
+form button {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 17.9rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 34.5rem;
+  height: 4.4rem;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #E5E5E5;
+  border: none;
+  
+}
